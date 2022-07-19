@@ -1,27 +1,30 @@
-### 763. Partition Labels
-You are given a string s. We want to partition the string into as many parts as possible so that each letter appears in at most one part.
+### 21. Merge Two Sorted Lists
+You are given the heads of two sorted linked lists list1 and list2.
 
-Note that the partition is done so that after concatenating all the parts in order, the resultant string should be s.
+Merge the two lists in a one sorted list. The list should be made by splicing together the nodes of the first two lists.
 
-Return a list of integers representing the size of these parts.
+Return the head of the merged linked list.
 
 #### Example 1:
 
 ```
-Input: s = "ababcbacadefegdehijhklij"
-Output: [9,7,8]
-Explanation:
-The partition is "ababcbaca", "defegde", "hijhklij".
-This is a partition so that each letter appears in at most one part.
-A partition like "ababcbacadefegde", "hijhklij" is incorrect, because it splits s into less parts.
+Input: list1 = [1,2,4], list2 = [1,3,4]
+Output: [1,1,2,3,4,4]
 ```
 
 #### Example 2:
 
 ```
-Input: s = "eccbbbbdec"
-Output: [10]
+Input: list1 = [], list2 = []
+Output: []
+```
+#### Example 3:
+
+```
+Input: list1 = [], list2 = [0]
+Output: [0]
 ```
 #### Constraints:
-- 1 <= s.length <= 500
-- s consists of lowercase English letters.
+- The number of nodes in both lists is in the range [0, 50].
+- -100 <= Node.val <= 100
+- Both list1 and list2 are sorted in non-decreasing order.
